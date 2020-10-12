@@ -1,0 +1,25 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "adprasad",
+      "name": "adprasad",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/2387136?v=4",
+      "profile": "https://github.com/adprasad",
+      "contributions": [
+        "code",
+        "test"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "discord-bot",
+  "projectOwner": "nhcarrigan",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
