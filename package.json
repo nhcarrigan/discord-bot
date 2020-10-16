@@ -2,7 +2,7 @@
   "name": "becca_bot",
   "author": "Nicholas Carrigan",
   "main": "./prod/src/main.js",
-  "version": "5.1.0",
+  "version": "5.1.1",
   "license": "GPL-3.0",
   "private": false,
   "engines": {
