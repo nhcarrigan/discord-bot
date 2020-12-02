@@ -48,7 +48,7 @@
     "discord.js": "^12.5.1",
     "mathjs": "^8.0.1",
     "module-alias": "^2.2.2",
-    "mongoose": "^5.10.18"
+    "mongoose": "^5.11.1"
   },
   "devDependencies": {
     "@types/chai": "^4.2.14",
