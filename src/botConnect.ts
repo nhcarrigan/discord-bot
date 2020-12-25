@@ -44,6 +44,7 @@ export async function botConnect(): Promise<void> {
   const Becca: BeccaInt = extendsClientToBeccaInt(
     new Client({
       partials: ["USER"],
+      shards: "auto",
     })
   );
 
@@ -66,6 +67,21 @@ export async function botConnect(): Promise<void> {
 
   // Load the listeners.
   Becca.customListeners = await getListeners();
+
+  // Shard logging
+  Becca.on("shardReady", (shard) => {
+    if (Becca.debugHook) {
+      Becca.debugHook.send(`Shard ${shard} is ready!`);
+    }
+    console.log(`Shard ${shard} is ready!`);
+  });
+
+  Becca.on("shardError", (err, shard) => {
+    if (Becca.debugHook) {
+      Becca.debugHook.send(`Shard ${shard} has crashed. Please see the longs.`);
+    }
+    console.error(err);
+  });
 
   // When Becca connects...
   Becca.on(
