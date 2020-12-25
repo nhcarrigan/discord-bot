@@ -9,7 +9,7 @@ on:
 
 jobs:
   ci:
-    name: Lint Build Test
+    name: Lint and Build
     runs-on: ubuntu-latest
 
     strategy:
@@ -33,6 +33,3 @@ jobs:
       
       - name: Run Build
         run: npm run build
-
-      - name: Run Unit Tests
-        run: npm run test:unit
